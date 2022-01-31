@@ -5,6 +5,9 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    color: #000;
+    font-weight: 800;
+    background: linear-gradient(rgb(187, 68, 167), rgb(58, 9, 233));
 }
 
 h1{
@@ -16,14 +19,20 @@ span{
 }
 
 .area-input{
-    width: 500px;
+    display: flow-root;
+    width: 70%;
+    height: 70%;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
+    background: linear-gradient(rgb(212, 16, 170), rgb(196, 30, 30));
+    border-radius: 10px;
+    opacity: 0.70;
 }
 
 .area-input input{
-    width: 100%;
+    width: 80%;
     margin-bottom: 12px;
     height: 46px;
     background-color: #121212;
@@ -36,7 +45,7 @@ span{
 }
 
 .area-input button{
-    width: 100%;
+    width: 80%;
     height: 46px;
     border: 0;
     border-radius: 6px;
@@ -47,5 +56,50 @@ span{
 
 h2{
     margin-top: 30px;
-   text-align: center;
+    text-align: center;
+}
+
+.footer{
+    margin-top: 20px;
+    font-size: 20px;
+    color: #FFFF;
+}
+
+@media(max-width: 700px){
+    h1{
+     font-size: 25px;
+    }
+
+    h2{
+        font-size: 15px;
+    }
+}
+
+
+
+@media(max-width: 400px){
+    h1{
+     font-size: 25px;
+    }
+
+    h2{
+        font-size: 13px;
+    }
+    span{
+        font-size: 15px;
+    }
+}
+
+
+@media(max-width: 350px){
+    h1{
+     font-size: 20px;
+    }
+
+    h2{
+        font-size: 10px;
+    }
+    span{
+        font-size: 15px;
+    }
 }

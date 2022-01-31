@@ -8,7 +8,7 @@ function App (){
 
   const [mensagem, setMensagem] = useState("");
   const [efeitos, setEfeitos] = useState("");
-  const [imcMenssage, setImcMessage] = useState("");
+  const [imcMessage, setImcMessage] = useState("");
 
   function calcularIMC (){
 
@@ -16,9 +16,9 @@ function App (){
     const imc = peso / (alt * alt);
 
     if(altura === "" && peso === ""){
-      alert("Por Favor, preencha os pesos corretamente !");
+        alert("[ERROR 404] Por Favor, preencha o peso  e a altura corretamente !");
     }else if(!alt){
-        alert("Por Favor, preencha os pesos corretamente !");
+        alert("[ERROR 404] Por Favor, preencha o peso  e a altura corretamente !");
         
     }else if (imc < 16.9){
      setMensagem(`Você está muito abaixo do peso !`);
@@ -60,10 +60,9 @@ function App (){
 
   return(
    <div className="app">
+      <div className="area-input">
       <h1>Calculadora de IMC</h1>
       <span>Vamos Calcular seu IMC ?</span>
-
-      <div className="area-input">
           <input 
             type="text"
             placeholder="Peso em [KG] Ex: 75"
@@ -82,12 +81,15 @@ function App (){
             Calcular
           </button>
 
-          <h2>
-            {mensagem} <br/>
-            {efeitos}  <br/>
-            {imcMenssage}
-          </h2>
+            <h2>
+                {mensagem} <br/>
+                {efeitos} <br/>
+                {imcMessage}
+            </h2>
       </div>
+      <footer className='footer'>
+          &copy; 2022 Ricardo-San
+      </footer>
    </div>
   );
 }
