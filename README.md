@@ -26,7 +26,7 @@
 <br>
 <br>
 <div align="center">
-  <h1>Click aqui para acessar o site hospedado na Vercel: <a href="https://flex-turismos-2cfyn4q9s-ricardosantanaevangelista.vercel.app">Site</a></h1>
+  <h1>Click aqui para acessar o site hospedado na Vercel: <a href="https://calculadora-imc-9mcb5tmta-ricardosantanaevangelista.vercel.app">Site</a></h1>
   
 </div>
   
