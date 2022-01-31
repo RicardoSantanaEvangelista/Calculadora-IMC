@@ -19,7 +19,7 @@
 
 <div>
     <h1 align="center">Site com a tela interia</h1>
-    <img src="./img-readme/img1.png" alt="Imagem da Front Page">
+    <img src="./img-readme/IMG1.png" alt="Imagem da Front Page">
 </div>
 
 ##
